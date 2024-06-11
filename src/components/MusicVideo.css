@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+.music_video{
+    /* margin-top: 4rem; */
+    background-color: rgb(212, 206, 206);
+    padding: 2rem 0;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .music_video_content{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  .mv_heading{
+    font-size: 2.5rem;
+  }
+  .mv_desc{
+    font-family: Times;
+    margin-bottom: 2rem;
+  }
+  .music_grid{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(1,1fr);
+  }
+  @media screen and (min-width:860px) {
+    .music_grid{
+    grid-template-columns: repeat(2,1fr);
+    }
+  }
+ .video{
+    width: 22rem;
+    height: 15rem;
+    margin: 0%;
+ } 
+ .music_card{
+    background-color: white;
+    border-radius: 5%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    transition: all .5s ease;
+ }
+    
+ .music_title{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+ }
+
+ .music_desc{
+    margin-bottom: 2rem;
+    font-family: Times;
+ }
+.mv_heading{
+    margin-bottom: 2rem;
+    font-family: 'Silkscreen', sans-serif;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.mv_heading:hover {
+    color: #fff;
+    text-shadow: 0 0 1.75px #090a0a,
+                0 0 6px #090a0a,
+                0 0 12px #090a0a,
+                0 0 25px #090a0a;
+  }
+.music_title h3{
+    font-family: 'Play', sans-serif;
+font-family: 'Silkscreen', sans-serif;
+}
+.music_card:hover{
+        transform: translate3D(0,-1px,0) scale(1.03);
+}

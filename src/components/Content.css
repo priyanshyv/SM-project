@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Play:wght@700&family=Silkscreen&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.content{
+    padding-top: 6rem;
+}
+.main_content{
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0.6rem;
+    align-items: center;
+    margin:0 auto
+}
+.content_left{
+    text-align: center; 
+    animation: slideFromLeft 1s ease forwards;
+    opacity: 0;
+}
+@keyframes slideFromLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+
+.content_right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content_right #sm_img{
+    border-radius: 5%;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px black;
+    height: 50vh;
+}
+@media screen and (min-width:768px) {
+    .main_content{
+        flex-direction: row;
+    }
+    .content_left{
+        max-width: 50%;
+        text-align: left;
+    }
+    .content_right{
+        display: flex;
+        justify-content: center;
+    }
+    .content_left #section_label{
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
+    .content_left #section_title{
+        font-weight: bolder;
+        margin-bottom: 2rem;
+    }
+    .button-54 {
+        padding: 0.25em 0.75em;
+        margin-top: 3rem;
+    }
+    #section_title{
+        margin-bottom: 2rem;
+    }
+    #sm_img{
+        margin-left: 4rem;
+    }
+}
+.button-54 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  .button-54:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+  }
+  #section_title{
+    font-family: 'Anton';
+    font-size: 32px; 
+    font-weight: bold;
+  }
+  #section_desc{
+    font-family: system-ui;
+  }
+  #section_label{
+    font-family: Times;
+    font-size: 24px;
+    height: 20px;
+  }

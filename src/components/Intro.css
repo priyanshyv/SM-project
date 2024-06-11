@@ -1,0 +1,7 @@
+/* write your css here */
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+.heading{
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    font-family: 'Rock Salt';
+}
